@@ -1,4 +1,4 @@
-FROM centos:centos7.9.2009
+FROM ubuntu
 RUN mkdir /sample
 WORKDIR /sample
 COPY command.sh /sample
