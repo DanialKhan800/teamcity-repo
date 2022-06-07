@@ -10,8 +10,8 @@ printf "%s\n%s\n%s\n%s\n%s\n%s\n" \
 "${dirBuildSource}/libraries.infrastructure/"
 
 
-$ chmod -R 777 ${dirBuildSource}/build* ${dirBuildSource}/libraries*
-$ chmod -R 755 ${dirBuildSource}/2020.0
+chmod -R 777 ${dirBuildSource}/build* ${dirBuildSource}/libraries*
+chmod -R 755 ${dirBuildSource}/2020.0
 
 
 dirBuildRoot=~/home/build
