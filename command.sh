@@ -1,4 +1,4 @@
-dirBuildSource=~/home/ubuntu/src/
+dirBuildSource=~/home/ubuntu/src
 
 
 printf "%s\n%s\n%s\n%s\n%s\n%s\n" \
