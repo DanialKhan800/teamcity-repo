@@ -10,12 +10,12 @@ printf "%s\n%s\n%s\n%s\n%s\n%s\n" \
 "${dirBuildSource}/libraries.infrastructure/"
 
 
-chmod -R 777 ${dirBuildSource}/build* ${dirBuildSource}/libraries*
-chmod -R 755 ${dirBuildSource}/2020.0
+#chmod -R 777 ${dirBuildSource}/build* ${dirBuildSource}/libraries*
+#chmod -R 755 ${dirBuildSource}/2020.0
 
 
 dirBuildRoot=~/home/build
-dockerImage=hub.docker.com/repository/docker
+dockerImage=hub.docker.com/_/nginx
 echo "Using ${dockerImage} as source of Docker build container."
 dockerCommand="docker run -it -v ${dirBuildSource}:${dirBuildRoot}:z ${dockerImage}"
 echo "${dockerCommand}"
@@ -30,7 +30,7 @@ echo "${dockerCommand}"
 
 
 set -ex
-rm -rf ${dirBuildRoot}/build* # remove folder with contents
+#rm -rf ${dirBuildRoot}/build* # remove folder with contents
 mkdir ${dirBuildRoot}/build # make directory with name
 cd ${dirBuildRoot}/build # change directory that name
 cmake -DBUILD_TESTS=OFF -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=${dirBuildRoot}/build/host -DHOST_STRUCTURE=ON -DPACKAGE_TYPE=PUBLIC ${dirBuildRoot}/libraries.tools
