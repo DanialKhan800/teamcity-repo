@@ -1,4 +1,5 @@
 FROM ubuntu
+RUN apt-get install -y g++ cmake build-essential 
 RUN mkdir /sample
 WORKDIR /sample
 COPY command.sh /sample
