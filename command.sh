@@ -21,7 +21,7 @@ echo "Using ${dockerImage} as source of Docker build container."
 dockerCommand="docker run -it -v ${dirBuildSource}:${dirBuildRoot}:z ${dockerImage}"
 echo "${dockerCommand}"
 #eval "${dockerCommand}"
-apt-get install -y g++ cmake build-essential
+sudo apt-get install -y g++ cmake build-essential
 
 
 
