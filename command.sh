@@ -16,7 +16,7 @@ printf "%s\n%s\n%s\n%s\n%s\n%s\n" \
 mkdir ~/build
 
 dirBuildRoot=~/build
-dockerImage=hub.docker.com/_/nginx
+dockerImage=hub.docker.com/repository/docker
 echo "Using ${dockerImage} as source of Docker build container."
 dockerCommand="docker run -it -v ${dirBuildSource}:${dirBuildRoot}:z ${dockerImage}"
 echo "${dockerCommand}"
@@ -28,7 +28,7 @@ echo "${dockerCommand}"
 
 
 set -ex
-#rm -rf ${dirBuildRoot}/build* # remove folder with contents
+rm -rf ${dirBuildRoot}/build* # remove folder with contents
 mkdir ${dirBuildRoot}/build # make directory with name
 mkdir ${dirBuildRoot}/libraries.tools # make libraries.tools directory
 cd ${dirBuildRoot}/build # change directory that name
