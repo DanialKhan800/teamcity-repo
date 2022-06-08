@@ -1,8 +1,8 @@
 FROM ubuntu:18.04
 
 RUN apt-get update && apt-get -y install cmake protobuf-compiler
-RUN apt install -y libprotobuf-dev protobuf-compiler
-RUN apt-get update && apt-get -y install cmake
+
+RUN apt-get -y install cmake
 
 RUN mkdir /sample
 WORKDIR /sample
