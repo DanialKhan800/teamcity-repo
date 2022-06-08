@@ -34,9 +34,9 @@ mkdir ${dirBuildRoot}/libraries.tools # make libraries.tools directory
 cd ${dirBuildRoot}/build # change directory that name
 # cmake -DBUILD_TESTS=OFF -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=${dirBuildRoot}/build/host -DHOST_STRUCTURE=ON -DPACKAGE_TYPE=PUBLIC ${dirBuildRoot}/libraries.tools
 # make VERBOSE=1 -j$(nproc) 2>&1 | tee <build-root>/build/build_log.txt
-make VERBOSE=1 # 2>&1 | tee ${dirBuildRoot}/build/build_log.txt
-make doc # -j$(nproc)
-make install # -j$(nproc)
+#make VERBOSE=1 # 2>&1 | tee ${dirBuildRoot}/build/build_log.txt
+#make doc # -j$(nproc)
+#make install # -j$(nproc)
 
 
 cd ..
