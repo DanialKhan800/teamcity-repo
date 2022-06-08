@@ -1,6 +1,4 @@
 FROM ubuntu
-
-ADD CMAKE .
 RUN mkdir /sample
 WORKDIR /sample
 COPY command.sh /sample
