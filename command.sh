@@ -1,5 +1,6 @@
-dirBuildSource=~/home/ubuntu/src
+#dirBuildSource=~/ubuntu/src
 
+dirBuildSource=./
 
 printf "%s\n%s\n%s\n%s\n%s\n%s\n" \
 "${dirBuildSource}/2020.0/" \
@@ -12,15 +13,15 @@ printf "%s\n%s\n%s\n%s\n%s\n%s\n" \
 
 #chmod -R 777 ${dirBuildSource}/build* ${dirBuildSource}/libraries*
 #chmod -R 755 ${dirBuildSource}/2020.0
+mkdir ~/build
 
-
-dirBuildRoot=~/home/build
+dirBuildRoot=~/build
 dockerImage=hub.docker.com/_/nginx
 echo "Using ${dockerImage} as source of Docker build container."
 dockerCommand="docker run -it -v ${dirBuildSource}:${dirBuildRoot}:z ${dockerImage}"
 echo "${dockerCommand}"
 #eval "${dockerCommand}"
-
+apt-get install -y g++ cmake build-essential
 
 
 
