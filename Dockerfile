@@ -6,7 +6,7 @@ RUN apt-get -y install cmake
 RUN mkdir /sample
 WORKDIR /sample
 COPY command.sh .
-COPY CMakeLists.txt ~
+COPY CMakeLists.txt .
 RUN chmod +x ./command.sh
 #RUN ./command.sh -x -f ./
 RUN ./command.sh
