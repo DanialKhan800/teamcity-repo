@@ -2,6 +2,8 @@ FROM ubuntu:18.04
 
 RUN apt-get update && apt-get -y install cmake protobuf-compiler
 RUN apt-get -y install cmake
+RUN apt-get install gcc
+
 
 RUN mkdir /sample
 WORKDIR /sample
