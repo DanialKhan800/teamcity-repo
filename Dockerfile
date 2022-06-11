@@ -13,5 +13,4 @@ COPY CMakeLists.txt .
 RUN chmod +x ./command.sh
 #RUN ./command.sh -x -f ./
 RUN ./command.sh
-#RUN chmod +x ./command
-#RUN cd command
+
