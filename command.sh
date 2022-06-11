@@ -32,6 +32,7 @@ rm -rf ${dirBuildRoot}/build* # remove folder with contents
 mkdir ${dirBuildRoot}/build # make directory with name
 mkdir ${dirBuildRoot}/libraries.tools # make libraries.tools directory
 cd ${dirBuildRoot}/build # change directory that name
+ls -al
 # cmake -DBUILD_TESTS=OFF -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=${dirBuildRoot}/build/host -DHOST_STRUCTURE=ON -DPACKAGE_TYPE=PUBLIC ${dirBuildRoot}/libraries.tools
 
 cmake -DBUILD_TESTS=OFF -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX= . -DHOST_STRUCTURE=ON -DPACKAGE_TYPE=PUBLIC .
