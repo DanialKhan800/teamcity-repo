@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 RUN apt-get update && apt-get -y install cmake protobuf-compiler
 RUN apt-get -y install cmake
-RUN sudo apt-get install -y build-essential
+RUN apt-get install -y build-essential
 RUN apt-get install gcc
 
 
