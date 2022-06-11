@@ -42,7 +42,7 @@ cmake -DBUILD_TESTS=OFF -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=${dirB
 
 #make VERBOSE=1 -j$(nproc) 2>&1 | tee <build-root>/build/build_log.txt
 make VERBOSE=1 # 2>&1 | tee ${dirBuildRoot}/build/build_log.txt
-make doc # -j$(nproc)
+make  # -j$(nproc)
 make install # -j$(nproc)
 
 
