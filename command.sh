@@ -45,8 +45,8 @@ ls -al Makefile
 
 #make VERBOSE=1 -j$(nproc) 2>&1 | tee <build-root>/build/build_log.txt
 make VERBOSE=1 # 2>&1 | tee ${dirBuildRoot}/build/build_log.txt
-make doc  -j$(nproc)
-make install # -j$(nproc)
+#make doc # -j$(nproc)
+#make install # -j$(nproc)
 
 
 cd ..
